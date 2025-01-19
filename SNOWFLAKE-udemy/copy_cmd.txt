@@ -1,0 +1,16 @@
+1. TRUNCATE_COLUMNS or ENFORCE_LENGTH:
+-TRUNCATECOLUMNS
+-true, false(default)
+or
+-ENFORCE_LENGTH (Opposite to above)
+>specify whether to truncate text strings that exceeds column length,
+
+2. PURGE :
+-true, false(default)
+-whether to remove data files from stage automatically after data loaded,
+
+3. LOAD_UNCERTAIN_FILES:
+-specify to load files for which load status is unknown,
+COPY cmd- skip these files default,
+
+4.

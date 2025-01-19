@@ -1,0 +1,67 @@
+GIT LOG Commands
+->git log --oneline --decorate --graph --all
+->git log --oneline --decorate --graph
+
+->git log --stat
+->git log --stat --oneline -n 2 (limit to 2 commits)
+
+-> git log -p  (displays patch representing each commit & shows full diff  )
+   -> q  (to return to prompt)
+->git log -p --oneline -n 1 (limit to 1 commit)
+*****************************
+->git log --oneline 'folder-name'   (shows commits in that folder)
+//search commits based on some string
+->git log --oneline grep="quick-feature"
+
+GIT REMOTE Commands\
+?? DIFF. b/w remote & local repo?
+
+->git remote show origin  OR ->git remote
+->git remote remove origin
+
+->git remote add newOrigin 'ssh-link'
+->git remote -v
+**************************
+GIT BRANCHING & MERGING Techniques :
+->git branch -a
+->git branch -m 'old-name' 'new-name'
+->git branch -d 'branch-name'  //need to merge if any file modified
+->git branch -D 'branch-name' //no need to merge,Discard the changes & delete the branch
+
+->git checkout -b new-branch master
+//creating a new branch based on master branch
+->git log --oneline
+(Note: now, new branche have all commits of master branch)
+(create new-branch2 based on new-branch1)
+->git log --oneline --decorate --graph --all
+(head at a commit)
+->git checkout new-branch1
+->git log --oneline --decorate --graph --all (now, head will point to another commit)
+
+
+********************************
+GIT SQUASH: Squashing allows us to combine commits together
+
+
+
+******************************
+GIT STASH : create, save,list & show
+->git stash save
+//temporarily store uncommitted work in order to clean out your working dir. without having to commit unfinished work on a branch.
+->git stash list
+GIT STASH -(apply,drop, pop,clear)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

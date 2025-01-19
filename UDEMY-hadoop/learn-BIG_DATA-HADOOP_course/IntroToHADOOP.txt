@@ -1,0 +1,4 @@
+HADOOP:
+-open source software platform for distributed storage, distributed
+processing of very large datasets on computer clusters,
+

@@ -1,0 +1,45 @@
+SNOWPIPE:
+-named database object (COPY cmd: used to load data)
+-load data within mins (when files added to stage & ingestion)
+-Serverless task,
+-one time setup,
+-suggested micro file size: 100-250MB
+-uses file loading metadata associate with each pipe to prevent duplicate,
+
+--------------------------
+STEPS to create SnowPipe:
+1. Create Storage integration object (SIO),
+2. Create stage object using SIO
+3. Create test copy cmd to load data,
+4. Create Pipe using COPY cmd,
+5. Setup event notifications at Cloud storage provider,
+
+-----------
+CREATE OR REPLACE PIPE pipe_name 
+AUTO_INGEST = [TRUE|FALSE]
+AS 
+<Copy_statement>
+-----------------
+CREATE PIPE, ALTER PIPE, DROP PIPE, DESCRIBE PIPE, SHOW PIPE,
+
+
+---------------------------------------------------------
+CACHING in SNOWFLAKE:
+- temporary storage location that stores copies of files of data,
+-improves query performance,
+-2 types of Cache in Snowflake:
+1. Query results cache
+2. Local disk cache,
+
+
+
+
+
+
+
+
+
+
+
+
+
